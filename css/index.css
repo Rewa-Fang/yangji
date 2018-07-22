@@ -1,7 +1,8 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Microsoft Yahei',Arial, Helvetica, sans-serif;
+    outline: none;
 }
 body{
     font-size: 12px;
@@ -61,6 +62,7 @@ header{
     /* padding-top: 10px; */
     /* padding-left: 10px; */
     padding: 10px 0 0 10px;
+    font-size: 12px;
 }
 .sign-ul i{
     color: #666;
@@ -107,7 +109,7 @@ header{
 /* header nav css */
 .header-nav{
     height: 35px;
-    border-bottom: 2px #666 solid;
+    border-bottom: 2px #eee solid;
 }
 
 .header-nav li{
@@ -121,7 +123,7 @@ header{
     display: inline-block;
     padding: 0 34px;
     line-height: 35px;
-    font-weight: bold;
+    font-weight: 500;
     /* background: #000; */
 }
 .header-nav li a:hover{
@@ -154,28 +156,38 @@ main{
 
 .hot-products{
     width: 100%;
-    height: 582px;
-    background-color: #eee;
+    /* height: 630px; */
+    background-color: #fff;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 5px 5px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-
 }
-.hot-item{
+.pro-item{
     width: 290px;
     background-color: #fff;
     margin-bottom: 10px;
 }
-.hot-item:hover{
+.pro-item:hover{
     transform: scale(1.02);
 }
-.hot-item img{
+.pro-item img{
     width: 100%;
-    height: auto;
+    /* height: auto; */
     box-shadow: 0px 4px 4px #eee;
+}
+.title-text{
+    font-size: 16px;
+    width: 100%;
+    font-weight: 500;
+    color: #666;
+    text-align: center;
+    padding: 2px 5px 5px 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #eee;
+    text-transform:uppercase;
 }
 .hot-text{
     font-size: 14px;
@@ -194,4 +206,160 @@ main{
 }
 .out-let img{
     width: 100%;
+}
+
+/* you like */
+.you-like{
+    width: 232px;
+}
+.like-title{
+    padding: 10px 5px;
+    font-weight: 100;
+}
+.like-price{
+    padding: 0 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #20d620;
+}
+.yuan-price{
+    padding: 0 5px;
+    font-size: 12px;
+    font-weight: 100;
+    text-decoration: line-through;
+}
+
+/* youhui */
+.youhui-title{
+    text-align: center;
+    padding: 16px;
+    font-size: 12px;
+}
+
+/*参与活动 event */
+
+.event{
+    width: 290px;
+}
+/* footer */
+footer{
+    width: 100%;
+    background-color: #eee;
+    padding: 20px 0 20px 0;
+    margin-top: 5px;
+}
+.footer-row{
+    margin: 0 auto;
+    display: flex;
+}
+.medium-4{
+    width: 300px;
+}
+ul{
+    display: block!important;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 26px;
+    list-style: none;
+    margin: 0 0 20px 0;
+}
+li{
+    list-style: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.medium-4 h3{
+    font-family: 'Yuanti SC';
+    color: #222;
+    /* font-weight: 500; */
+}
+.medium-4 a{
+    color: #000;
+    font-size: 17px;
+    font-weight: 200;
+    line-height: inherit;
+    text-decoration: none;
+    font-family: 'Yuanti SC';
+}
+.customer-service{
+    margin-top: 10px;
+    display: flex;
+}
+.email-input{
+    width: 300px;
+    height: 30px;
+    padding-left: 5px;
+    border: 1px solid #b4b4b5;
+}
+.email-input:focus{
+    border: 1px solid #c25d5d;
+    border-right: 0;
+}
+.button {
+    width: 140px;
+    border: 1px solid #b4b4b5;
+    border:0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: #b4b4b5;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.button:focus, .button:hover {
+    background-color: #909091;
+    text-decoration: none;
+}
+.button:active{
+    border: 1px solid #c25d5d;
+    border-left: 0;
+    background-color: #ddd;
+}
+.tips-text{
+    margin-top: 4px;
+    color: #c03;
+    font-family: 'Yuanti SC',serif;
+    font-size: 12px;
+    font-style: normal;
+}
+
+/* stay-touch */
+
+.stay-touch{
+    margin-top: 20px;
+}
+.links{
+    margin-top: 10px;
+}
+.links li{
+    list-style: none;
+    display: inline;
+}
+.links a{
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    padding: 32px 0 0 32px;
+}
+.links li.Facebook a {
+    background-image: url('../image/icon/facebook.png');
+}
+.links li.Instagram a {
+    background-image: url('../image/icon/instagram.png');
+}
+.links li.Twitter a {
+    background-image: url('../image/icon/twitter.png');
+}
+.links li.Pinterest a {
+    background-image: url('../image/icon/pinterest.png');
+}
+.links li.Youtube a {
+    background-image: url('../image/icon/youtube.png');
+}
+.text {
+    margin: 15px 0 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1;
 }
