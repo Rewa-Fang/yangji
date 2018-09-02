@@ -445,6 +445,10 @@ form{
     color: #fff;
     background-color: #9abe14;
 }
+.msg-signin-btn{
+    background-color: #fff;
+    color: blueviolet;
+}
 button{
     -webkit-appearance: none;
     border: 1px #cbcecd solid;
@@ -570,7 +574,11 @@ button{
 #contenter .pro_info .btns{overflow:hidden; margin-top:25px; font-size:14px;}
 #contenter .pro_info .btns a{float:left; padding:0 15px; height:32px; line-height:32px; color:#fff; background:#7f7f7f; margin-right:15px;}
 #contenter .pro_info .btns a.green{background:#00923f;}
-
+#global_editor_contents{
+    border-top: 2px solid #ddd;
+    padding-top:10px; 
+}
+.price{ font-size:16px; color:#00923f; font-weight: bold;}
 /*************************** main (end) ***************************/
 .w1200 #contenter {
     width: 950px;
@@ -603,4 +611,53 @@ button{
     padding: 0 20px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+
+#turn_page {
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    clear: both;
+}
+#turn_page span {
+    border: 1px #cecece solid;
+    display: inline-block;
+    font-size: 14px;
+    height: 33px;
+    line-height: 33px;
+    overflow: hidden;
+    background: #fff;
+    vertical-align: top;
+    margin: 0 4px;
+    border-radius: 4px;
+    -ms-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+#turn_page .page_noclick {
+    cursor: no-drop;
+}
+#turn_page .page_button, #turn_page .page_noclick {
+    width: auto;
+    padding: 0 12px;
+}
+#turn_page .page_item_current {
+    background: #333;
+    color: #fff;
+    cursor: default;
+}
+#turn_page font, #turn_page a {
+    width: 32px;
+    height: 33px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+#turn_page font, #turn_page a {
+    width: 32px;
+    height: 33px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }

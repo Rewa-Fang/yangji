@@ -2,21 +2,23 @@
     case_gallery();
 })();
 function signIn() {
-    document.getElementById("mask").style.display = "block";
-    document.getElementById("signinForm").style.display = "block";
+    $('#messageFormNoLogin').hide();
+    $('#mask').show();
+    $('#signinForm').show();
+    $('#signupForm').hide();
 }
 function signUp() {
-    document.getElementById("mask").style.display = "block";
-    document.getElementById("signupForm").style.display = "block";
+    $('#mask').show();
+    $('#signupForm').show();
+    $('#signinForm').hide();
 }
 function closeForm(){
-    document.getElementById("mask").style.display = "none";
-    document.getElementById("signinForm").style.display = "none";
-    document.getElementById("signupForm").style.display = "none";
+    $('#mask').hide();
+    $('#signupForm').hide();
+    $('#signinForm').hide();
 }
 
 function case_gallery(){
-    
 	$('#small_img .small_img_list .bd').delegate('span', 'click', function(){
 		var img=$(this).attr('pic');
 		// $('#bigimg_src').attr('src', img).parent().attr('href', img);
@@ -24,7 +26,9 @@ function case_gallery(){
 		$(this).addClass('on').siblings('span').removeClass('on');
 	});
 }
-
+$('.category').on('click',function(){
+    $(this).addClass('cur').siblings('li').removeClass('cur');
+})
 function showMessage(){
     $('#mask').show();
     if(localStorage.userInfo){
