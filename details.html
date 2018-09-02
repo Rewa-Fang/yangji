@@ -78,9 +78,104 @@
     </div>
     <!-- main -->
     <main class="w1200 margin-auto">
-        <div class="details">
-            
+        <div id="side">
+            <div class="menu_box">
+                <h2 class="title">Product Details</h2>
+                <ul class="list">
+                    <li class="category_2 cur">
+                        <dl>
+                            <dt>
+                                <a href="" title="case">Details</a>
+                            </dt>
+                            <dd>-
+                                <a href="" class="category_3" title="test">xxx</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <dl class="contact">
+                <dt>Contact Us</dt>
+                <dd>
+                    <i class="add"></i>Jinde Building, Wende street, Yuexiu District</dd>
+                <dd>
+                    <i class="tel"></i>xxxxxxxxx</dd>
+                <dd>
+                    <i class="mail"></i>
+                    <a href="mailto:xxxxxx@qq.com" title="xxxxxxx@qq.com">xxxxxxx@qq.com</a>
+                </dd>
+                <dd>
+                    <i class="web"></i>
+                    <a href="http://xxx.xxx.xxxxxx.com">xxx.xxx.xxxxxx.com</a>
+                </dd>
+            </dl>
         </div>
+        <div id="contenter">
+            <div id="location">
+                <i></i>You are here:
+                <a href="/">Home</a> &gt;
+                <a class="po_cur" href="">Product Details</a>
+            </div>
+            <div class="main_contents">
+                <div class="gallery fl">
+                    <div class="bigimg">
+                        <a href="/u_file/1508/case/20/42d61c498c.jpg" class="case" title="Formal Gown and Tux Favor Boxes" target="_blank">
+                            <img src="./image/bed1.jpg" id="bigimg_src" alt="Formal Gown and Tux Favor Boxes">
+                            <em></em>
+                        </a>
+                    </div>
+                    <div id="small_img">
+                        <div id="case_small" class="small_img_list">
+                            <div class="bd clean">
+                                <!-- 循环span 绑定pic属性为大图片url  span 下 img src为小图片预览图片 -->
+                                <span class="pic_box on" pic="./image/bed1.jpg">
+                                    <a href="javascript:;">
+                                        <img src="./image/bed1.jpg" alt="Formal Gown and Tux Favor Boxes">
+                                        <em></em>
+                                    </a>
+                                </span>
+                                <span class="pic_box" pic="./image/bed2.jpg">
+                                    <a href="javascript:;">
+                                        <img src="./image/bed2.jpg" alt="Formal Gown and Tux Favor Boxes">
+                                        <em></em>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro_info">
+                    <div class="fr info">
+                        <h3 class="name">这里是产品名称</h3>
+                        <div class="brief">这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介 这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是
+                            简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介
+                        </div>
+                        <div class="price">$100.00</div>
+                        <button id="message-btn">Message</button>
+                        <div class="blank25"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="blank25"></div>
+                <div class="description">
+                    <div class="hd clean">
+                        <span class="cur">Details</span>
+                    </div>
+                    <div class="bd">
+                        <div class="desc_txt" style="display:block;">
+                            <div id="global_editor_contents">
+                                <!-- 这里是详细描述 -->
+                                详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blank25"></div>
+
+
+            </div>
+        </div>
+        <div class="blank25"></div>
     </main>
     <!-- footer -->
     <footer>
@@ -236,27 +331,39 @@
                     <a class="noCtrTrack" id="signup_close" href="javascript:closeForm()">×</a>
                 </div>
                 <div class="row">
-                    <label for="firstName">First Name<span class="bitian">*</span></label>
+                    <label for="firstName">First Name
+                        <span class="bitian">*</span>
+                    </label>
                     <input name="firstName" class="lib_txt" type="text" maxlength="100" size="43" format="firstName">
                 </div>
                 <div class="row">
-                    <label for="lastName">Last Name<span class="bitian">*</span></label>
+                    <label for="lastName">Last Name
+                        <span class="bitian">*</span>
+                    </label>
                     <input name="lastName" class="lib_txt" type="text" maxlength="100" size="43" format="lastName">
                 </div>
                 <div class="row">
-                    <label for="country">Country<span class="bitian">*</span></label>
+                    <label for="country">Country
+                        <span class="bitian">*</span>
+                    </label>
                     <input name="country" class="lib_txt" type="text" maxlength="100" size="43" format="country">
                 </div>
                 <div class="row">
-                    <label for="tel">Tel<span class="bitian">*</span></label>
+                    <label for="tel">Tel
+                        <span class="bitian">*</span>
+                    </label>
                     <input name="tel" class="lib_txt" type="text" maxlength="100" size="43" format="tel">
                 </div>
                 <div class="row">
-                    <label for="Email">Email<span class="bitian">*</span></label>
+                    <label for="Email">Email
+                        <span class="bitian">*</span>
+                    </label>
                     <input name="Email" class="lib_txt" type="text" maxlength="100" size="43" format="Email">
                 </div>
                 <div class="row">
-                    <label for="Password">Password<span class="bitian">*</span></label>
+                    <label for="Password">Password
+                        <span class="bitian">*</span>
+                    </label>
                     <input name="Password" class="lib_txt" type="password" maxlength="100" size="43" format="Password">
                 </div>
                 <div class="row">
@@ -270,7 +377,55 @@
                 </div>
             </form>
         </div>
+        <div id="messageForm" class="signin-form">
+            <form action="">
+                <div class="form-title">
+                    Sign Up
+                    <a class="noCtrTrack" id="signup_close" href="javascript:closeForm()">×</a>
+                </div>
+                <div class="row">
+                    <label for="firstName">First Name
+                        <span class="bitian">*</span>
+                    </label>
+                    <input name="firstName" class="lib_txt" type="text" maxlength="100" size="43" format="firstName">
+                </div>
+                <div class="row">
+                    <label for="lastName">Last Name
+                        <span class="bitian">*</span>
+                    </label>
+                    <input name="lastName" class="lib_txt" type="text" maxlength="100" size="43" format="lastName">
+                </div>
+                <div class="row">
+                    <label for="country">Country
+                        <span class="bitian">*</span>
+                    </label>
+                    <input name="country" class="lib_txt" type="text" maxlength="100" size="43" format="country">
+                </div>
+                <div class="row">
+                    <label for="tel">Tel
+                        <span class="bitian">*</span>
+                    </label>
+                    <input name="tel" class="lib_txt" type="text" maxlength="100" size="43" format="tel">
+                </div>
+                <div class="row">
+                    <label for="Email">Email
+                        <span class="bitian">*</span>
+                    </label>
+                    <input name="Email" class="lib_txt" type="text" maxlength="100" size="43" format="Email">
+                </div>
+                <div class="row">
+                        <label for="Content">Content
+                            <span class="bitian">*</span>
+                        </label>
+                        <textarea name="Content" class="lib_txt" format="Content">
+                    </div>
+                <div class="row">
+                    <button class="signbtn" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
     </div>
+    <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/swiper-4.3.3.min.js"></script>
     <script src="./js/index.js"></script>
     <script>
