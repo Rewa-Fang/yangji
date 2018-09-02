@@ -151,7 +151,7 @@
                             简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介
                         </div>
                         <div class="price">$100.00</div>
-                        <button id="message-btn">Message</button>
+                        <button id="message-btn" onclick="showMessage()">Message</button>
                         <div class="blank25"></div>
                     </div>
                     <div class="clear"></div>
@@ -377,10 +377,10 @@
                 </div>
             </form>
         </div>
-        <div id="messageForm" class="signin-form">
+        <div id="messageFormNoLogin" class="signin-form">
             <form action="">
                 <div class="form-title">
-                    Sign Up
+                    Message
                     <a class="noCtrTrack" id="signup_close" href="javascript:closeForm()">×</a>
                 </div>
                 <div class="row">
@@ -414,17 +414,35 @@
                     <input name="Email" class="lib_txt" type="text" maxlength="100" size="43" format="Email">
                 </div>
                 <div class="row">
-                        <label for="Content">Content
-                            <span class="bitian">*</span>
-                        </label>
-                        <textarea name="Content" class="lib_txt" format="Content">
-                    </div>
+                    <label for="Content">Message Content
+                        <span class="bitian">*</span>
+                    </label>
+                    <textarea name="Content" class="lib_txt msg-content" rows="3" cols="20" format="Content"></textarea>
+                </div>
                 <div class="row">
-                    <button class="signbtn" type="submit">Send</button>
+                    <button class="signbtn" type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+        <div id="messageForm" class="signin-form">
+            <form action="">
+                <div class="form-title">
+                    Message
+                    <a class="noCtrTrack" id="signup_close" href="javascript:closeForm()">×</a>
+                </div>
+                <div class="row">
+                    <label for="Content">Message Content
+                        <span class="bitian">*</span>
+                    </label>
+                    <textarea name="Content" class="lib_txt msg-content" rows="3" cols="20" format="Content"></textarea>
+                </div>
+                <div class="row">
+                    <button class="signbtn" type="submit">Send Message</button>
                 </div>
             </form>
         </div>
     </div>
+
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/swiper-4.3.3.min.js"></script>
     <script src="./js/index.js"></script>
